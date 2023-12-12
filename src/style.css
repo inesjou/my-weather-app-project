@@ -1,10 +1,13 @@
 body {
   background-color: #e3f6f5;
+  font-family: "Roboto", sans-serif;
 }
 
 .content {
   background-color: white;
   width: fit-content;
-  margin: 0 auto;
+  margin: 40px auto;
   padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
 }
