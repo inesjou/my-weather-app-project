@@ -1,0 +1,10 @@
+body {
+  background-color: #e3f6f5;
+}
+
+.content {
+  background-color: white;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 30px;
+}
