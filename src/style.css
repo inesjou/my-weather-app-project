@@ -16,6 +16,7 @@ footer {
   color: #717474;
   font-size: 14px;
   border-top: 1px solid #dce4e4;
+  text-align: center;
 }
 
 main {
@@ -65,10 +66,25 @@ a {
   cursor: pointer;
 }
 
-.current-temperature {
-  font-size: 55px;
+.current-temperature-number {
+  font-size: 60px;
 }
 
 .current-conditions {
   color: #717474;
+}
+
+.current-conditions strong {
+  color: #262443;
+}
+
+.current-temperature-unit {
+  font-size: 20px;
+  position: relative;
+  top: -30px;
+}
+
+.current-weather {
+  position: relative;
+  left: 30px;
 }
