@@ -11,6 +11,15 @@ h1 {
   font-size: 35px;
 }
 
+footer {
+  color: #717474;
+  font-size: 14px;
+}
+
+a {
+  color: #41bebe;
+}
+
 .content {
   background-color: white;
   width: fit-content;
