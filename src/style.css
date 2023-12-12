@@ -7,6 +7,10 @@ header {
   margin: 0 auto;
 }
 
+h1 {
+  font-size: 35px;
+}
+
 .content {
   background-color: white;
   width: fit-content;
@@ -25,6 +29,11 @@ header {
   width: 80%;
 }
 
+.today-date {
+  margin: 20px 0 0 0;
+  color: #717474;
+}
+
 .form-submit {
   background-color: #41bebe;
   border: none;
@@ -39,4 +48,12 @@ header {
   background-color: #e3f6f5;
   color: #41bebe;
   cursor: pointer;
+}
+
+.current-temperature {
+  font-size: 55px;
+}
+
+.current-conditions {
+  color: #717474;
 }
