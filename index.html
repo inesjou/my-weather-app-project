@@ -27,10 +27,13 @@
       </header>
       <main>
         <div>
-          <div class="today-date">Tuesday 14:20, sunny</div>
+          <div class="today-date">
+            <span id="time">Tuesday 14:20</span>,
+            <span id="description">sunny</span>
+          </div>
           <br />
           <span class="current-weather">
-            <h1><span id="searched-city"></span> ☀️</h1>
+            <h1><span id="searched-city"></span> <span id="icon">☀️</span></h1>
             <div class="current-temperature">
               <span
                 class="current-temperature-number"
@@ -40,7 +43,8 @@
             </div>
             <br />
             <div class="current-conditions">
-              Humidity: <strong>45%</strong><br />Wind: <strong>10 km/h</strong>
+              Humidity: <strong id="humidity">45%</strong><br />Wind:
+              <strong id="wind-speed">10 km/h</strong>
             </div>
           </span>
         </div>
