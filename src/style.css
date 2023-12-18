@@ -9,7 +9,7 @@ header {
 }
 
 h1 {
-  font-size: 35px;
+  font-size: 40px;
 }
 
 footer {
@@ -87,4 +87,9 @@ a {
 .current-weather {
   left: 30px;
   position: relative;
+}
+
+.icon {
+  position: relative;
+  top: 17px;
 }
