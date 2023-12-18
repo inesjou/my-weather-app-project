@@ -13,9 +13,9 @@ h1 {
 }
 
 footer {
+  border-top: 1px solid #dce4e4;
   color: #717474;
   font-size: 14px;
-  border-top: 1px solid #dce4e4;
   text-align: center;
 }
 
@@ -29,34 +29,34 @@ a {
 
 .content {
   background-color: white;
-  width: fit-content;
-  margin: 40px auto;
-  padding: 30px;
   border-radius: 15px;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+  margin: 40px auto;
+  padding: 30px;
+  width: fit-content;
 }
 
 .form-search {
   border: none;
   background-color: #e3f6f5;
   border-radius: 10px;
-  padding: 15px;
   font-size: 18px;
+  padding: 15px;
   width: 80%;
 }
 
 .today-date {
-  margin: 20px 0 0 0;
   color: #717474;
+  margin: 20px 0 0 0;
 }
 
 .form-submit {
   background-color: #41bebe;
   border: none;
-  padding: 15px 25px;
   border-radius: 10px;
-  font-size: 18px;
   color: white;
+  font-size: 18px;
+  padding: 15px 25px;
   transition: all 150ms ease-in-out;
 }
 
@@ -75,7 +75,7 @@ a {
 }
 
 .current-conditions strong {
-  color: #262443;
+  color: #4b478d;
 }
 
 .current-temperature-unit {
@@ -85,6 +85,6 @@ a {
 }
 
 .current-weather {
-  position: relative;
   left: 30px;
+  position: relative;
 }
