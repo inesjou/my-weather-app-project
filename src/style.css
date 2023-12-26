@@ -10,6 +10,7 @@ header {
 
 h1 {
   font-size: 40px;
+  margin-top: 0;
 }
 
 footer {
@@ -66,8 +67,13 @@ a {
   cursor: pointer;
 }
 
+.current-temperature {
+  position: relative;
+  top: -30px;
+  left: 90px;
+}
 .current-temperature-number {
-  font-size: 60px;
+  font-size: 90px;
 }
 
 .current-conditions {
@@ -79,17 +85,31 @@ a {
 }
 
 .current-temperature-unit {
-  font-size: 20px;
+  font-size: 30px;
   position: relative;
-  top: -30px;
+  top: -50px;
+  left: -10px;
 }
 
 .current-weather {
   left: 30px;
-  position: relative;
+  display: flex;
+  justify-content: space-between;
 }
 
 .icon {
   position: relative;
   top: 17px;
+}
+
+.weather-forecast-day {
+  font-size: 18px;
+}
+
+.weather-forecast-temperature-max {
+  color: #41bebe;
+}
+
+.weather-forecast-temperature-min {
+  opacity: 0.6;
 }
