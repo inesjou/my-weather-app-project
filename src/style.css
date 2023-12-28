@@ -70,7 +70,7 @@ a {
 .current-temperature {
   position: relative;
   top: -30px;
-  left: 90px;
+  left: -5px;
 }
 .current-temperature-number {
   font-size: 90px;
@@ -112,4 +112,10 @@ a {
 
 .weather-forecast-temperature-min {
   opacity: 0.6;
+}
+
+.weather-forecast {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
 }
