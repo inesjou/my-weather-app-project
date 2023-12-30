@@ -60,27 +60,38 @@ function apiForecast(city) {
   axios.get(apiUrl).then(displayForecast);
 }
 
-function displayForecast(response) {
-  console.log(response.data);
-  let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
-  let forecastHtml = "";
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
-  days.forEach(function (day) {
-    forecastHtml =
-      forecastHtml +
-      `
+  return days[date.getDay()];
+}
+
+function displayForecast(response) {
+  let forecastHtml = "";
+  response.data.daily.forEach(function (day, index) {
+    let dayForecast = formatDay(day.time);
+    let iconForecast = day.condition.icon_url;
+    let maxForecast = Math.round(day.temperature.maximum);
+    let minForecast = Math.round(day.temperature.minimum);
+    if (index > 0 && index < 6) {
+      forecastHtml =
+        forecastHtml +
+        `
       <div class="weather-forecast-day">
-              <span class="weather-forecast-date">${day}</span>
-              <span class="weather-forecast-icon">🌤️</span>
+              <span class="weather-forecast-date">${dayForecast}</span>
+               <img src="${iconForecast}" class="weather-forecast-icon" width=35px />
               <div class="weather-forecast-temperatures">
                 <span class="weather-forecast-temperature-max">
-                  <strong>15º</strong>
+                  <strong>${maxForecast}º</strong>
                 </span>
-                <span class="weather-forecast-temperature-min">9º</span>
+                <span class="weather-forecast-temperature-min">${minForecast}º</span>
               </div>
       </div>
     `;
+    }
   });
+
   let forecastElement = document.querySelector("#forecast");
   forecastElement.innerHTML = forecastHtml;
 }
