@@ -80,7 +80,8 @@ function displayForecast(response) {
         `
       <div class="weather-forecast-day">
               <span class="weather-forecast-date">${dayForecast}</span>
-               <img src="${iconForecast}" class="weather-forecast-icon" width=35px />
+              <br />
+               <img src="${iconForecast}" class="weather-forecast-icon" width=50px />
               <div class="weather-forecast-temperatures">
                 <span class="weather-forecast-temperature-max">
                   <strong>${maxForecast}º</strong>

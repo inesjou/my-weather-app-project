@@ -119,3 +119,12 @@ a {
   justify-content: space-around;
   margin-top: 30px;
 }
+
+.weather-forecast-day {
+  font-size: 15px;
+  text-align: center;
+}
+
+.weather-forecast-date {
+  opacity: 0.6;
+}
